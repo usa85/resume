@@ -1,0 +1,61 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    color: black;
+    background-color: black;
+    background-image: url()
+}
+h3{
+    color: white;
+    padding-top: 1rem;
+}
+hr{
+    border-color:#deb887; 
+}
+li{
+    color: white;
+    list-style-type: none;
+    padding-top: .5rem;
+    padding-bottom:.5rem;
+    padding-left:.2rem;
+    
+}
+.listfree{
+    list-style-type: disc;
+    padding-left:.5rem;
+    margin-left: 2rem;
+    padding-top: .1rem;
+    padding-bottom:.1rem;
+    
+}
+li:hover{
+    background-color:white;
+    color:black;
+
+}
+.jumbotron{
+    background-color: grey;
+    padding:1rem;
+    text-align: center;
+    margin-bottom: 0rem;
+    background-image: url("../images/some.jpg");
+}
+
+#floating-panel{
+    position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+}
+.mainexperience{
+    color: white;
+}
