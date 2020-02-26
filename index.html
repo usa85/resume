@@ -45,25 +45,25 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Full</a>
+                    <a class="nav-link disabled" data-toggle="collapse"href="#">Full</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Experience</a>
+                      <a class="nav-link" data-toggle="collapse" href="#experienceAccordeon">Experience</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Education</a>
+                      <a class="nav-link" data-toggle="collapse" href="#educationAccordeon">Education</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Projects</a>
+                      <a class="nav-link" data-toggle="collapse" href="#projectsAccordeon">Projects</a>
                     </li>   
                     <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Volunteer</a>
+                    <a class="nav-link disabled" data-toggle="collapse" href="#volunteerAccordeon">Volunteer</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Porfolio</a>
+                    <a class="nav-link disabled" data-toggle="collapse" href="#portfolioAccordeon">Porfolio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Carousel</a>
+                    <a class="nav-link disabled" data-toggle="collapse" href="#carouselAccordeon">Carousel</a>
                     </li> 
                     <li class="nav-item">
                     <a class="nav-link disabled" href="#">Print</a>
@@ -73,7 +73,7 @@
               </nav>
         <!--Navigation Ends-->
         <!--Main Body Begins.  It includes one rows per section (Experience, Education, Project, Etc..-->
-            <div class="row">
+            <div id="experienceAccordeon" class="row collapse">
                 <div class="col-sm-2" id="joblistcolumn">
                     <h3 class="joblistcolumn">Job List</h3><hr>
                     <div id="joblist">
@@ -81,19 +81,82 @@
                     </div>
                 </div>
 
-                <div class="col-sm-10" id="experience">
+                <div class="col-sm-8" id="experience">
                   
-                  <h3 id="descriptionHeader">Experience</h3>
+                  <h3 id="descriptionHeader"><i class="fas fa-hand-point-left"></i> Experience </h3>
                   <hr>
                   <div id="experienceContents">
                       <!--list experience retrieved from workexperience file using main javascript file -->
                       <p class="mainexperience">Experience only list the job I held over the last ten years.</p>
                       <p class="mainexperience">Yet, I have a rich and diverse employment experience that took place in France, in Australia, and in the United States. I worked on the farm and at a movie theater as a teenager.  I completed a military service as a nurse in the French Air Force as a young adult. I had a few internships in France.  With an F-1 visa, I was limited to work on campus as a clerk for the University of Minnesota Medical Distribution Center for five years. Then, I earned an E1-E2 visa creating a consulting company which later led me to my Green Card and my US Citizenship.</p>
-                      <p class="mainexperience">My resume shows gaps in employment. In my early career, I delt with immigration issues. Recently, I had to take over two years off work to care for my wife as a full time care giver.</p>
+                      <p class="mainexperience">However, my resume shows gaps in employment. In my early career, I delt with immigration issues forcing me to take breaks. Recently, I had to take over two years off work to care for my wife as a full time care giver. During that time, I enjoyed working part time at Trader Joe's, enjoy the benefits of marketing research about grocery stores, conduct product line audits for Survey.com, and complet a full stack developer certificate.</p>
                   </div>
                 </div>
+                <div class="col-sm-2" id="joblistcolumn">
+                  <h3 class="joblistcolumn">Skills</h3><hr>
+                  <div id="joblistr">
+                      <!--Job List Abbreviation goes here-->
+                  </div>
+              </div>
             </div>
-            </div>
+          
+
+            <div id="educationAccordeon" class="row collapse">
+                <div class="col-sm-2" id="degreelistcolumn">
+                    <h3 class="degreelistcolumn">Degrees</h3><hr>
+                    <div id="degreelist">
+                        <!--Degree List Abbreviation goes here-->
+                    </div>
+                </div>
+
+                <div class="col-sm-8" id="education">
+                  
+                    <h3 id="descriptionHeader"><i class="fas fa-hand-point-left"></i> Education </h3>
+                    <hr>
+                    <div id="EducationContents">
+                        <!--list experience retrieved from workexperience file using main javascript file -->
+                        <p class="mainEducation">Education</p>
+                        <p class="mainEducation">Education</p>
+                        <p class="mainEducation">Education</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-2" id="joblistcolumn">
+                      <h3 class="joblistcolumn">Skills</h3><hr>
+                      <div id="joblistr">
+                          <!--Job List Abbreviation goes here-->
+                      </div>
+                  </div>
+                </div>
+               
+
+                <div id="projectsAccordeon" class="row collapse">
+                    <div class="col-sm-2" id="projectslistcolumn">
+                        <h3 class="projectslistcolumn">Degrees</h3><hr>
+                        <div id="projectslist">
+                            <!--Degree List Abbreviation goes here-->
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8" id="experience">
+                  
+                        <h3 id="descriptionHeader"><i class="fas fa-hand-point-left"></i> Projects </h3>
+                        <hr>
+                        <div id="projectContents">
+                            <!--list experience retrieved from workexperience file using main javascript file -->
+                            <p class="mainexperience">Projects</p>
+                            <p class="mainexperience">Projects</p>
+                            <p class="mainexperience">Projects</p>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-2" id="projectslistcolumn">
+                          <h3 class="projectslistcolumn">Skills</h3><hr>
+                          <div id="projectslistr">
+                              <!--Job List Abbreviation goes here-->
+                          </div>
+                      </div>
+                    </div>
+                  </div>
         <!--Main Body Ends -->
     </div>
 
@@ -102,7 +165,9 @@
     <script src="assets/jsdata/workexperience.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/javascripts/cenotaphData2.js"></script>
+    <script type="text/javascript" src="assets/jsscripts/educationp.js"></script>
+    <script async defer type="text/javascript" src="assets/jsscripts/maineducation.js"></script>
+    <script async defer type="text/javascript" src="assets/jsscripts/mainportfolio.js"></script>
     <script async defer type="text/javascript" src="assets/jsscripts/mainexperience.js"></script>
            
            
